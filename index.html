@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maison Fleur — floral house</title>
+  <meta
+    name="description"
+    content="Премиальная цветочная студия: авторские букеты, композиции, корпоративные заказы."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="site-bg-lines"></div>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a href="#top" class="logo">
+        <span class="logo__seal">MF</span>
+        <span class="logo__text">
+          <strong>Marsala flowers</strong>
+          <small>доставка цветов</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#signature">Сигнатуры</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#corporate">Корпоративные</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="https://t.me/username" class="btn btn--ghost">Telegram</a>
+        <a href="#" class="btn btn--ghost">Max</a>
+        <a href="tel:+79999999999" class="btn btn--accent">Позвонить</a>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero__media">
+        <img
+          src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?auto=format&fit=crop&w=1800&q=80"
+          alt="Премиальные цветочные композиции"
+        />
+        <div class="hero__overlay"></div>
+        <div class="hero__monogram hero__monogram--left"></div>
+        <div class="hero__monogram hero__monogram--right"></div>
+      </div>
+
+      <div class="container hero__content reveal">
+        <p class="hero__eyebrow">premium floral atelier</p>
+
+        <h1 class="hero__title">
+          Букеты,
+          <span>которые ощущаются как жест вкуса</span>
+        </h1>
+
+        <p class="hero__text">
+          Не шаблонный цветочный магазин, а визуальный премиальный каталог:
+          выразительные композиции, глубокая палитра, быстрый сценарий заказа и
+          ощущение уровня с первого экрана.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#catalog" class="btn btn--accent">Открыть каталог</a>
+          <a href="https://t.me/username" class="btn btn--glass">Заказать в Telegram</a>
+          <a href="#corporate" class="btn btn--outline-light">Для бизнеса</a>
+        </div>
+
+        <div class="hero__meta">
+          <div class="hero-meta-card">
+            <span>Палитра</span>
+            <strong>бордо / оливковый / молочный / графит</strong>
+          </div>
+          <div class="hero-meta-card">
+            <span>Подход</span>
+            <strong>меньше слов, больше воздуха и сильной визуальной подачи</strong>
+          </div>
+          <div class="hero-meta-card">
+            <span>Сервис</span>
+            <strong>Telegram, Max и звонок вместо перегруженных форм</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section signature" id="signature">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-head__label">signature selection</p>
+          <h2 class="section-head__title">Выразительные позиции, с которых хочется начать</h2>
+          <p class="section-head__text">
+            На первом касании показываем не “всё подряд”, а самые сильные работы, чтобы
+            сайт сразу выглядел статусно и собранно.
+          </p>
+        </div>
+
+        <div class="signature-grid">
+          <article class="signature-card signature-card--large reveal" data-category="author" data-price="7900">
+            <div class="signature-card__gallery">
+              <img class="product-image active" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1400&q=80" alt="Rouge No.7">
+              <img class="product-image" src="https://images.unsplash.com/photo-1455656678494-4d1b5f3e7ad1?auto=format&fit=crop&w=1400&q=80" alt="Rouge No.7">
+              <img class="product-image" src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?auto=format&fit=crop&w=1400&q=80" alt="Rouge No.7">
+              <div class="product-dots"></div>
+            </div>
+
+            <div class="signature-card__content">
+              <p class="mini-label">signature bouquet</p>
+              <h3>Rouge No.7</h3>
+              <p class="signature-card__desc">
+                Драматичная винная композиция с архитектурной формой и выразительной упаковкой.
+              </p>
+              <div class="signature-card__bottom">
+                <span class="signature-card__price">от 7 900 ₽</span>
+                <div class="card-actions">
+                  <a href="https://t.me/username" class="btn btn--accent btn--small">Заказать</a>
+                  <a href="#" class="btn btn--ghost btn--small">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="signature-card reveal" data-category="mono" data-price="4300">
+            <div class="signature-card__gallery">
+              <img class="product-image active" src="https://images.unsplash.com/photo-1494336934272-fd670477c5ab?auto=format&fit=crop&w=1200&q=80" alt="Olive Grace">
+              <img class="product-image" src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=1200&q=80" alt="Olive Grace">
+              <img class="product-image" src="https://images.unsplash.com/photo-1526397751294-331021109fbd?auto=format&fit=crop&w=1200&q=80" alt="Olive Grace">
+              <div class="product-dots"></div>
+            </div>
+            <div class="signature-card__content">
+              <p class="mini-label">mono bouquet</p>
+              <h3>Olive Grace</h3>
+              <span class="signature-card__price">от 4 300 ₽</span>
+            </div>
+          </article>
+
+          <article class="signature-card reveal" data-category="box" data-price="8600">
+            <div class="signature-card__gallery">
+              <img class="product-image active" src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=1200&q=80" alt="Velvet Case">
+              <img class="product-image" src="https://images.unsplash.com/photo-1516589091380-5d8e87df6999?auto=format&fit=crop&w=1200&q=80" alt="Velvet Case">
+              <img class="product-image" src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=1200&q=80" alt="Velvet Case">
+              <div class="product-dots"></div>
+            </div>
+            <div class="signature-card__content">
+              <p class="mini-label">box composition</p>
+              <h3>Velvet Case</h3>
+              <span class="signature-card__price">от 8 600 ₽</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section mood-band">
+      <div class="container mood-band__inner reveal">
+        <p>без скидок</p>
+        <span></span>
+        <p>без визуального шума</p>
+        <span></span>
+        <p>только эстетика, сервис и готовый выбор</p>
+      </div>
+    </section>
+
+    <section class="section catalog" id="catalog">
+      <div class="container">
+        <div class="catalog-top reveal">
+          <div class="section-head section-head--narrow">
+            <p class="section-head__label">editorial catalog</p>
+            <h2 class="section-head__title">Каталог в лаконичной luxury-подаче</h2>
+          </div>
+
+          <div class="catalog-filters">
+            <div class="chips">
+              <button class="chip is-active" data-filter-type="all">Все</button>
+              <button class="chip" data-filter-type="author">Авторские</button>
+              <button class="chip" data-filter-type="mono">Моно</button>
+              <button class="chip" data-filter-type="box">Коробки</button>
+            </div>
+            <div class="chips">
+              <button class="chip is-active" data-filter-price="all">Любая цена</button>
+              <button class="chip" data-filter-price="low">до 4000</button>
+              <button class="chip" data-filter-price="mid">4000–7000</button>
+              <button class="chip" data-filter-price="high">7000+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-grid" id="catalogGrid">
+          <article class="catalog-card reveal" data-category="author" data-price="5900">
+            <div class="catalog-card__gallery">
+              <img class="product-image active" src="https://images.unsplash.com/photo-1455656678494-4d1b5f3e7ad1?auto=format&fit=crop&w=1200&q=80" alt="Crimson Story">
+              <img class="product-image" src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?auto=format&fit=crop&w=1200&q=80" alt="Crimson Story">
+              <img class="product-image" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=80" alt="Crimson Story">
+              <div class="product-dots"></div>
+            </div>
+            <div class="catalog-card__body">
+              <p class="mini-label">author bouquet</p>
+              <h3>Crimson Story</h3>
+              <p class="catalog-card__desc">Сложная форма, глубокий оттенок, дорогая подача.</p>
+              <div class="catalog-card__bottom">
+                <span class="catalog-card__price">от 5 900 ₽</span>
+                <a href="https://t.me/username" class="text-link">Заказать</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card reveal" data-category="mono" data-price="3200">
+            <div class="catalog-card__gallery">
+              <img class="product-image active" src="https://images.unsplash.com/photo-1494336934272-fd670477c5ab?auto=format&fit=crop&w=1200&q=80" alt="Pure Stem">
+              <img class="product-image" src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=1200&q=80" alt="Pure Stem">
+              <img class="product-image" src="https://images.unsplash.com/photo-1526397751294-331021109fbd?auto=format&fit=crop&w=1200&q=80" alt="Pure Stem">
+              <div class="product-dots"></div>
+            </div>
+            <div class="catalog-card__body">
+              <p class="mini-label">mono bouquet</p>
+              <h3>Pure Stem</h3>
+              <p class="catalog-card__desc">Чистая форма и спокойное дорогое звучание.</p>
+              <div class="catalog-card__bottom">
+                <span class="catalog-card__price">от 3 200 ₽</span>
+                <a href="https://t.me/username" class="text-link">Заказать</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card reveal" data-category="box" data-price="6900">
+            <div class="catalog-card__gallery">
+              <img class="product-image active" src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=1200&q=80" alt="Velour Bloom">
+              <img class="product-image" src="https://images.unsplash.com/photo-1516589091380-5d8e87df6999?auto=format&fit=crop&w=1200&q=80" alt="Velour Bloom">
+              <img class="product-image" src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=1200&q=80" alt="Velour Bloom">
+              <div class="product-dots"></div>
+            </div>
+            <div class="catalog-card__body">
+              <p class="mini-label">box composition</p>
+              <h3>Velour Bloom</h3>
+              <p class="catalog-card__desc">Подарочная подача с ощущением редкости и статуса.</p>
+              <div class="catalog-card__bottom">
+                <span class="catalog-card__price">от 6 900 ₽</span>
+                <a href="https://t.me/username" class="text-link">Заказать</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card reveal" data-category="author" data-price="7400">
+            <div class="catalog-card__gallery">
+              <img class="product-image active" src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?auto=format&fit=crop&w=1200&q=80" alt="Atelier Line">
+              <img class="product-image" src="https://images.unsplash.com/photo-1455656678494-4d1b5f3e7ad1?auto=format&fit=crop&w=1200&q=80" alt="Atelier Line">
+              <img class="product-image" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=80" alt="Atelier Line">
+              <div class="product-dots"></div>
+            </div>
+            <div class="catalog-card__body">
+              <p class="mini-label">author bouquet</p>
+              <h3>Atelier Line</h3>
+              <p class="catalog-card__desc">Редакционная композиция для выразительного повода.</p>
+              <div class="catalog-card__bottom">
+                <span class="catalog-card__price">от 7 400 ₽</span>
+                <a href="https://t.me/username" class="text-link">Заказать</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card reveal" data-category="mono" data-price="3900">
+            <div class="catalog-card__gallery">
+              <img class="product-image active" src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=1200&q=80" alt="Ivory Silence">
+              <img class="product-image" src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=80" alt="Ivory Silence">
+              <img class="product-image" src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1200&q=80" alt="Ivory Silence">
+              <div class="product-dots"></div>
+            </div>
+            <div class="catalog-card__body">
+              <p class="mini-label">mono bouquet</p>
+              <h3>Ivory Silence</h3>
+              <p class="catalog-card__desc">Мягкая светлая композиция без лишнего декора.</p>
+              <div class="catalog-card__bottom">
+                <span class="catalog-card__price">от 3 900 ₽</span>
+                <a href="https://t.me/username" class="text-link">Заказать</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card reveal" data-category="box" data-price="9200">
+            <div class="catalog-card__gallery">
+              <img class="product-image active" src="https://images.unsplash.com/photo-1527061011665-3652c757a4d4?auto=format&fit=crop&w=1200&q=80" alt="Burgundy Signature">
+              <img class="product-image" src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=1200&q=80" alt="Burgundy Signature">
+              <img class="product-image" src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=1200&q=80" alt="Burgundy Signature">
+              <div class="product-dots"></div>
+            </div>
+            <div class="catalog-card__body">
+              <p class="mini-label">box composition</p>
+              <h3>Burgundy Signature</h3>
+              <p class="catalog-card__desc">Статусная композиция для сильного впечатления.</p>
+              <div class="catalog-card__bottom">
+                <span class="catalog-card__price">от 9 200 ₽</span>
+                <a href="https://t.me/username" class="text-link">Заказать</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section corporate" id="corporate">
+      <div class="container corporate__grid">
+        <div class="corporate__copy reveal">
+          <p class="section-head__label section-head__label--light">corporate floral service</p>
+          <h2 class="section-head__title section-head__title--light">Блок для юрлиц, который выглядит как VIP-сервис</h2>
+          <p class="corporate__text">
+            Здесь компания сразу считывает уровень студии: подарки руководителям,
+            поздравления партнёрам, деловые композиции, оформление мероприятий —
+            всё без отдельной брошюры и лишних презентаций.
+          </p>
+
+          <ul class="corporate__list">
+            <li>Подарки сотрудникам и руководителям</li>
+            <li>Поздравления для клиентов и партнёров</li>
+            <li>Оформление деловых поводов и мероприятий</li>
+            <li>Быстрое согласование через Telegram и Max</li>
+          </ul>
+
+          <div class="corporate__actions">
+            <a href="https://t.me/username" class="btn btn--light-solid">Обсудить заказ</a>
+            <a href="#contacts" class="btn btn--outline-light">Оставить заявку</a>
+          </div>
+        </div>
+
+        <div class="corporate__visual reveal">
+          <div class="corporate__visual-card">
+            <span>Maison Fleur for business</span>
+            <strong>Не просто цветы, а деликатный дорогой жест для брендов и людей</strong>
+          </div>
+          <img src="https://images.unsplash.com/photo-1527061011665-3652c757a4d4?auto=format&fit=crop&w=1400&q=80" alt="Корпоративная композиция">
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-head__label">trust & presence</p>
+          <h2 class="section-head__title">Отзывы, карта, присутствие</h2>
+          <p class="section-head__text">
+            Вместо длинного “о нас” — реальные отзывы, рейтинг и понятный сценарий “как приехать”.
+          </p>
+        </div>
+
+        <div class="reviews-layout">
+          <div class="reviews-cards">
+            <article class="review-card reveal">
+              <p>“Очень стильный букет. Не банальный, не перегруженный, всё выглядело дорого и тонко.”</p>
+              <strong>— отзыв с Яндекс Карт</strong>
+            </article>
+            <article class="review-card reveal">
+              <p>“Выбрала быстро, написала в Telegram, всё согласовали спокойно и без суеты.”</p>
+              <strong>— отзыв клиента</strong>
+            </article>
+          </div>
+
+          <div class="map-card reveal">
+            <div class="map-card__inner">
+              <span>Яндекс Карты</span>
+              <h3>Здесь будет карта, рейтинг и кнопка “Как проехать”</h3>
+              <p>Сюда же логично встроить хорошие отзывы и ссылку на профиль студии.</p>
+              <a href="#" class="btn btn--ghost">Открыть карту</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contacts" id="contacts">
+      <div class="container contacts__grid">
+        <div class="contacts__copy reveal">
+          <p class="section-head__label">contacts</p>
+          <h2 class="section-head__title">Связаться просто</h2>
+          <ul class="contacts-list">
+            <li><strong>Адрес:</strong> Чебоксары, пример адреса, 12</li>
+            <li><strong>График:</strong> ежедневно 09:00–21:00</li>
+            <li><strong>Важно:</strong> время работы может меняться</li>
+            <li><strong>Телефон:</strong> +7 (999) 999-99-99</li>
+          </ul>
+
+          <div class="contacts__actions">
+            <a href="https://t.me/username" class="btn btn--accent">Написать в Telegram</a>
+            <a href="#" class="btn btn--ghost">Написать в Max</a>
+            <a href="tel:+79999999999" class="btn btn--outline">Позвонить</a>
+          </div>
+        </div>
+
+        <form class="contact-card reveal">
+          <p class="mini-label">quick request</p>
+          <h3>Короткая заявка</h3>
+          <label>
+            <span>Имя</span>
+            <input type="text" placeholder="Ваше имя" />
+          </label>
+          <label>
+            <span>Контакт</span>
+            <input type="text" placeholder="+7 или @username" />
+          </label>
+          <label>
+            <span>Комментарий</span>
+            <textarea rows="4" placeholder="Повод, бюджет, пожелания"></textarea>
+          </label>
+          <button type="button" class="btn btn--accent btn--full">Отправить запрос</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="logo">
+        <span class="logo__seal">MF</span>
+        <span class="logo__text">
+          <strong>Maison Fleur</strong>
+          <small>floral house</small>
+        </span>
+      </a>
+
+      <nav class="footer__nav">
+        <a href="#catalog">Каталог</a>
+        <a href="#corporate">Корпоративные</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="footer__links">
+        <a href="https://t.me/username">Telegram</a>
+        <a href="#">Max</a>
+        <a href="tel:+79999999999">Позвонить</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-actions">
+    <a href="https://t.me/username">TG</a>
+    <a href="#">MX</a>
+    <a href="tel:+79999999999">Call</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
