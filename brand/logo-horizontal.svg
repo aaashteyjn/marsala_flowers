@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600">
+  <rect width="1600" height="600" fill="#F7F2EC"/>
+  <g transform="translate(80,44) scale(1)">
+    <g transform="translate(0,6)">
+    <path class="olive" d="M253 228 C235 270, 237 318, 249 360 C257 388, 260 410, 244 433 C269 433, 287 420, 292 400 C299 372, 287 342, 282 320 C272 276, 274 248, 288 217 Z"/>
+    <path class="olive2" d="M232 267 C182 240, 131 246, 104 282 C147 289, 190 289, 229 281 Z"/>
+    <path class="olive2" d="M217 318 C177 304, 138 311, 111 339 C145 345, 183 347, 220 336 Z"/>
+    <path class="olive2" d="M229 375 C197 365, 167 373, 145 395 C174 401, 206 402, 234 391 Z"/>
+
+    <path class="olive2" d="M287 281 C324 289, 367 290, 408 282 C381 245, 330 240, 283 267 Z"/>
+    <path class="olive2" d="M292 336 C327 347, 364 345, 399 339 C372 311, 333 304, 292 318 Z"/>
+    <path class="olive2" d="M278 391 C307 402, 339 401, 368 395 C346 373, 316 365, 284 375 Z"/>
+
+    <path class="olive" d="M212 262 C178 218, 145 194, 101 170 C122 210, 154 241, 203 273 Z"/>
+    <path class="olive" d="M214 319 C177 292, 143 279, 107 270 C129 301, 163 321, 217 331 Z"/>
+    <path class="olive" d="M226 376 C196 358, 172 350, 149 348 C165 372, 191 389, 230 392 Z"/>
+
+    <path class="olive" d="M295 262 C329 218, 362 194, 406 170 C385 210, 353 241, 304 273 Z"/>
+    <path class="olive" d="M293 319 C330 292, 364 279, 400 270 C378 301, 344 321, 290 331 Z"/>
+    <path class="olive" d="M281 376 C311 358, 335 350, 358 348 C342 372, 316 389, 277 392 Z"/>
+
+    <path class="olive2" d="M164 164 C148 131, 126 111, 103 97 C103 130, 118 160, 151 179 Z"/>
+    <path class="olive2" d="M198 149 C190 112, 196 80, 210 53 C226 82, 229 115, 214 150 Z"/>
+    <path class="olive2" d="M316 149 C324 112, 318 80, 304 53 C288 82, 285 115, 300 150 Z"/>
+    <path class="olive2" d="M347 164 C363 131, 385 111, 408 97 C408 130, 393 160, 360 179 Z"/>
+
+    <path class="olive" d="M164 171 C186 207, 204 236, 227 289" opacity=".95"/>
+    <path class="olive" d="M347 171 C325 207, 307 236, 284 289" opacity=".95"/>
+    <path class="olive" d="M199 151 C222 190, 236 223, 247 258" opacity=".95"/>
+    <path class="olive" d="M312 151 C289 190, 275 223, 264 258" opacity=".95"/>
+  </g>
+
+  <!-- rose base petals -->
+  <g transform="translate(0,-8)">
+    <path class="wine" d="M254 66 C222 66, 192 82, 173 109 C150 141, 149 185, 165 219 C183 257, 216 279, 254 286 C292 279, 325 257, 343 219 C359 185, 358 141, 335 109 C316 82, 286 66, 254 66 Z"/>
+    <path class="wine" d="M171 130 C148 157, 139 192, 142 228 C145 267, 169 302, 205 317 C190 275, 193 221, 204 184 C212 157, 199 136, 171 130 Z"/>
+    <path class="wine" d="M337 130 C360 157, 369 192, 366 228 C363 267, 339 302, 303 317 C318 275, 315 221, 304 184 C296 157, 309 136, 337 130 Z"/>
+    <path class="wine" d="M209 298 C217 328, 233 350, 254 364 C275 350, 291 328, 299 298 C286 304, 271 307, 254 309 C237 307, 222 304, 209 298 Z"/>
+  </g>
+
+  <!-- milk petal lines -->
+  <g transform="translate(0,-8)">
+    <path class="stroke-milk" d="M254 93 C231 93, 211 102, 196 118 C180 135, 174 157, 178 179 C190 159, 208 145, 228 140 C220 158, 221 178, 232 195 C237 172, 250 155, 270 145 C265 163, 269 182, 283 197 C288 177, 301 162, 321 154 C320 130, 304 109, 280 98 C272 94, 263 93, 254 93 Z"/>
+    <path class="stroke-milk" d="M236 201 C219 214, 210 233, 210 255 C225 243, 243 238, 261 239"/>
+    <path class="stroke-milk" d="M275 196 C295 205, 307 222, 312 246 C295 239, 277 238, 261 239"/>
+    <path class="stroke-milk" d="M259 126 C252 137, 249 148, 250 161"/>
+  </g>
+
+  </g>
+  <text x="760" y="285"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="120" letter-spacing="10" fill="#2C2C2C">MARSALA</text>
+  <text x="765" y="395"
+        font-family="'Times New Roman', Georgia, serif"
+        font-style="italic"
+        font-size="86" letter-spacing="2" fill="#6E6A1F">flowers</text>
+</svg>

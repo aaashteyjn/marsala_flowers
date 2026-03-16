@@ -8,23 +8,16 @@ document.addEventListener("DOMContentLoaded", () => {
 function initBurger() {
   const burger = document.getElementById("burger");
   const nav = document.getElementById("nav");
-
   if (!burger || !nav) return;
 
-  burger.addEventListener("click", () => {
-    nav.classList.toggle("is-open");
-  });
-
+  burger.addEventListener("click", () => nav.classList.toggle("is-open"));
   nav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("is-open");
-    });
+    link.addEventListener("click", () => nav.classList.remove("is-open"));
   });
 }
 
 function initReveal() {
   const items = document.querySelectorAll(".reveal");
-
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -38,16 +31,14 @@ function initReveal() {
 }
 
 function initProductGalleries() {
-  const galleries = document.querySelectorAll(".signature-card, .catalog-card");
+  const cards = document.querySelectorAll(".signature-card, .catalog-card");
 
-  galleries.forEach((card) => {
+  cards.forEach((card) => {
     const images = card.querySelectorAll(".product-image");
     const dotsWrap = card.querySelector(".product-dots");
-
     if (!images.length || !dotsWrap) return;
 
     let current = 0;
-
     images.forEach((_, index) => {
       const dot = document.createElement("button");
       dot.type = "button";
@@ -57,9 +48,7 @@ function initProductGalleries() {
       dot.addEventListener("click", () => {
         images[current].classList.remove("active");
         dotsWrap.children[current].classList.remove("active");
-
         current = index;
-
         images[current].classList.add("active");
         dotsWrap.children[current].classList.add("active");
       });
@@ -73,7 +62,6 @@ function initCatalogFilter() {
   const typeButtons = document.querySelectorAll("[data-filter-type]");
   const priceButtons = document.querySelectorAll("[data-filter-price]");
   const cards = document.querySelectorAll("#catalogGrid .catalog-card");
-
   if (!cards.length) return;
 
   let activeType = "all";
@@ -101,10 +89,8 @@ function initCatalogFilter() {
     cards.forEach((card) => {
       const category = card.dataset.category;
       const price = Number(card.dataset.price);
-
       const typeMatch = activeType === "all" || category === activeType;
       const priceMatch = matchPrice(price, activePrice);
-
       card.style.display = typeMatch && priceMatch ? "" : "none";
     });
   }
