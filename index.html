@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MARSALA flowers — доставка цветов и букетов</title>
+  <title>MARSALA flowers</title>
   <meta name="description" content="Авторские букеты, монобукеты и композиции MARSALA flowers. Доставка, самовывоз, корпоративные заказы." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,19 +20,14 @@
         </a>
 
         <nav class="nav" id="nav">
-          <a href="author-bouquets.html">Авторские</a>
-          <a href="mono-bouquets.html">Монобукеты</a>
+          <a href="bouquets.html">Букеты</a>
           <a href="box-compositions.html">Коробки</a>
           <a href="compositions.html">Композиции</a>
-          <a href="corporate.html">Корпоративные</a>
+          <a href="">Свадебные букеты</a>
+          <a href="">Декор</a>
+          <a href="corporate.html">Сотрудничество</a>
           <a href="#contacts">Контакты</a>
         </nav>
-
-        <div class="header__actions">
-          <a href="https://t.me/marsalaflower" class="btn btn--ghost">Telegram</a>
-          <a href="https://max.ru/" class="btn btn--ghost">MAX</a>
-          <a href="tel:+79263496564" class="btn btn--accent">Позвонить</a>
-        </div>
 
         <button class="burger" id="burger" aria-label="Меню">
           <span></span><span></span><span></span>
@@ -45,165 +40,56 @@
         <div class="hero__media">
           <img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?auto=format&fit=crop&w=1800&q=80" alt="Авторские букеты и композиции" />
           <div class="hero__overlay"></div>
-          <div class="hero__monogram hero__monogram--left"></div>
-          <div class="hero__monogram hero__monogram--right"></div>
           <div class="hero__watermark"></div>
         </div>
-
         <div class="container hero__content reveal">
-          <p class="hero__eyebrow">MARSALA flowers</p>
+          <p class="hero__eyebrow">Цветочная студия</p>
           <h1 class="hero__title">
-            Авторские букеты и композиции
+            MARSALA flowers
             <span>с доставкой и быстрым заказом</span>
           </h1>
-          <p class="hero__text">
-            Букеты для подарка, важного повода и красивого жеста. Выберите готовую работу в каталоге
-            или свяжитесь с нами, чтобы подобрать композицию под ваш запрос.
-          </p>
-
-          <div class="hero__actions">
-            <a href="#catalog" class="btn btn--accent">Смотреть каталог</a>
-            <a href="https://t.me/marsalaflower" class="btn btn--glass">Заказать в Telegram</a>
-            <a href="tel:+79263496564" class="btn btn--outline-light">Позвонить</a>
-          </div>
-
-          <div class="hero__meta">
-            <div class="hero-meta-card">
-              <span>Доставка</span>
-              <strong>бережно соберём и отправим букет</strong>
-            </div>
-            <div class="hero-meta-card">
-              <span>Формат</span>
-              <strong>авторские, моно, коробки и композиции</strong>
-            </div>
-            <div class="hero-meta-card">
-              <span>Контакт</span>
-              <strong>Telegram и телефон для быстрого заказа</strong>
-            </div>
           </div>
         </div>
       </section>
 
-      <section class="section signature" id="signature">
+      <section class="section signature">
         <div class="container">
-          <div class="section-head reveal">
+          <div class="section-head">
             <p class="section-head__label">featured bouquets</p>
             <h2 class="section-head__title">Хитовые позиции</h2>
             <p class="section-head__text">Самые выразительные варианты, с которых удобно начать выбор.</p>
           </div>
+                <div class="quick-choice__filters">
+      <div class="quick-choice__tabs">
+        <button class="quick-choice__tab is-active" data-filter="all">Все</button>
+        <button class="quick-choice__tab" data-filter="author">Авторские</button>
+        <button class="quick-choice__tab" data-filter="mono">Моно</button>
+        <button class="quick-choice__tab" data-filter="boxes">Коробки</button>
+      </div>
 
-          <div class="signature-grid">
-            <article class="signature-card signature-card--large reveal" data-category="author" data-price="7900">
-              <div class="signature-card__gallery">
-                <img class="product-image active" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1400&q=80" alt="Rouge No.7" />
-                <img class="product-image" src="https://images.unsplash.com/photo-1455656678494-4d1b5f3e7ad1?auto=format&fit=crop&w=1400&q=80" alt="Rouge No.7" />
-                <img class="product-image" src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?auto=format&fit=crop&w=1400&q=80" alt="Rouge No.7" />
-                <div class="product-dots"></div>
-              </div>
-              <div class="signature-card__content">
-                <p class="mini-label">signature bouquet</p>
-                <h3>Rouge No.7</h3>
-                <p class="signature-card__desc">Выразительная винная композиция с акцентной формой и фактурной подачей.</p>
-                <div class="signature-card__bottom">
-                  <span class="signature-card__price">от 7 900 ₽</span>
-                  <div class="card-actions">
-                    <a href="https://t.me/marsalaflower" class="btn btn--accent btn--small">Заказать</a>
-                    <a href="author-bouquets.html" class="btn btn--ghost btn--small">В каталог</a>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="signature-card reveal" data-category="mono" data-price="4300">
-              <div class="signature-card__gallery">
-                <img class="product-image active" src="https://images.unsplash.com/photo-1494336934272-fd670477c5ab?auto=format&fit=crop&w=1200&q=80" alt="Olive Grace" />
-                <img class="product-image" src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=1200&q=80" alt="Olive Grace" />
-                <img class="product-image" src="https://images.unsplash.com/photo-1526397751294-331021109fbd?auto=format&fit=crop&w=1200&q=80" alt="Olive Grace" />
-                <div class="product-dots"></div>
-              </div>
-              <div class="signature-card__content">
-                <p class="mini-label">mono bouquet</p>
-                <h3>Olive Grace</h3>
-                <span class="signature-card__price">от 4 300 ₽</span>
-              </div>
-            </article>
-
-            <article class="signature-card reveal" data-category="box" data-price="8600">
-              <div class="signature-card__gallery">
-                <img class="product-image active" src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=1200&q=80" alt="Velvet Case" />
-                <img class="product-image" src="https://images.unsplash.com/photo-1516589091380-5d8e87df6999?auto=format&fit=crop&w=1200&q=80" alt="Velvet Case" />
-                <img class="product-image" src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=1200&q=80" alt="Velvet Case" />
-                <div class="product-dots"></div>
-              </div>
-              <div class="signature-card__content">
-                <p class="mini-label">box composition</p>
-                <h3>Velvet Case</h3>
-                <span class="signature-card__price">от 8 600 ₽</span>
-              </div>
-            </article>
-          </div>
+      <div class="quick-choice__price-range">
+        <div class="quick-choice__price-values">
+          <span id="priceMinValue">2 000 ₽</span>
+          <span>—</span>
+          <span id="priceMaxValue">15 500 ₽</span>
         </div>
-      </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="section-head reveal">
-            <p class="section-head__label">categories</p>
-            <h2 class="section-head__title">Категории букетов</h2>
-            <p class="section-head__text">На отдельные страницы можно вынести любые категории и наполнять их своими карточками.</p>
-          </div>
+        <div class="quick-choice__slider">
+          <div class="quick-choice__track"></div>
+          <div class="quick-choice__range" id="priceRangeFill"></div>
 
-          <div class="category-links reveal">
-            <a class="category-link" href="author-bouquets.html">
-              <h3>Авторские</h3>
-              <p>Сложные формы и выразительные композиции</p>
-            </a>
-            <a class="category-link" href="mono-bouquets.html">
-              <h3>Монобукеты</h3>
-              <p>Чистые формы и лаконичная подача</p>
-            </a>
-            <a class="category-link" href="box-compositions.html">
-              <h3>Коробки</h3>
-              <p>Подарочные композиции в коробках</p>
-            </a>
-            <a class="category-link" href="compositions.html">
-              <h3>Композиции</h3>
-              <p>Объёмные цветочные решения под повод</p>
-            </a>
-          </div>
+          <input type="range" min="2000" max="20000" value="2000" id="priceMin" class="quick-choice__input">
+          <input type="range" min="2000" max="20000" value="15500" id="priceMax" class="quick-choice__input">
         </div>
-      </section>
-
-      <section class="section catalog" id="catalog">
-        <div class="container">
-          <div class="catalog-top reveal">
-            <div class="section-head section-head--narrow">
-              <p class="section-head__label">quick choice</p>
-              <h2 class="section-head__title">Быстрый подбор по цене</h2>
-            </div>
-
-            <div class="catalog-filters">
-              <div class="chips">
-                <button class="chip is-active" data-filter-type="all">Все</button>
-                <button class="chip" data-filter-type="author">Авторские</button>
-                <button class="chip" data-filter-type="mono">Моно</button>
-                <button class="chip" data-filter-type="box">Коробки</button>
-              </div>
-              <div class="chips">
-                <button class="chip is-active" data-filter-price="all">Любая цена</button>
-                <button class="chip" data-filter-price="low">до 4000</button>
-                <button class="chip" data-filter-price="mid">4000–7000</button>
-                <button class="chip" data-filter-price="high">7000+</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="catalog-grid" id="catalogGrid">
+      </div>
+    </div>
+  </div>
+<div class="catalog-grid" id="catalogGrid">
             <article class="catalog-card reveal" data-category="author" data-price="5900">
               <div class="catalog-card__gallery">
-                <img class="product-image active" src="https://images.unsplash.com/photo-1455656678494-4d1b5f3e7ad1?auto=format&fit=crop&w=1200&q=80" alt="Crimson Story" />
-                <img class="product-image" src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?auto=format&fit=crop&w=1200&q=80" alt="Crimson Story" />
-                <img class="product-image" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=80" alt="Crimson Story" />
+                <img class="product-image active" src="img/коробки/XXL.jpg" alt="Crimson Story" />
+                <img class="product-image" src="img/коробки/XXL.jpg" alt="Crimson Story" />
+                <img class="product-image" src="img/коробки/XXL.jpg" alt="Crimson Story" />
                 <div class="product-dots"></div>
               </div>
               <div class="catalog-card__body">
@@ -219,9 +105,9 @@
 
             <article class="catalog-card reveal" data-category="mono" data-price="3200">
               <div class="catalog-card__gallery">
-                <img class="product-image active" src="https://images.unsplash.com/photo-1494336934272-fd670477c5ab?auto=format&fit=crop&w=1200&q=80" alt="Pure Stem" />
-                <img class="product-image" src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=1200&q=80" alt="Pure Stem" />
-                <img class="product-image" src="https://images.unsplash.com/photo-1526397751294-331021109fbd?auto=format&fit=crop&w=1200&q=80" alt="Pure Stem" />
+                <img class="product-image active" src="img/коробки/XXL.jpg" alt="Pure Stem" />
+                <img class="product-image" src="img/коробки/XXL.jpg" alt="Pure Stem" />
+                <img class="product-image" src="img/коробки/XXL.jpg" alt="Pure Stem" />
                 <div class="product-dots"></div>
               </div>
               <div class="catalog-card__body">
@@ -237,9 +123,9 @@
 
             <article class="catalog-card reveal" data-category="box" data-price="6900">
               <div class="catalog-card__gallery">
-                <img class="product-image active" src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=1200&q=80" alt="Velour Bloom" />
-                <img class="product-image" src="https://images.unsplash.com/photo-1516589091380-5d8e87df6999?auto=format&fit=crop&w=1200&q=80" alt="Velour Bloom" />
-                <img class="product-image" src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=1200&q=80" alt="Velour Bloom" />
+                <img class="product-image active" src="img/коробки/XXL.jpg" alt="Velour Bloom" />
+                <img class="product-image" src="img/коробки/XXL.jpg" alt="Velour Bloom" />
+                <img class="product-image" src="img/коробки/XXL.jpg" alt="Velour Bloom" />
                 <div class="product-dots"></div>
               </div>
               <div class="catalog-card__body">
@@ -256,10 +142,65 @@
         </div>
       </section>
 
+<section class="section bouquet-categories">
+  <div class="container">
+    <div class="section-head reveal bouquet-categories__head">
+      <p class="section-head__label">categories</p>
+      <h2 class="section-head__title">Категории букетов</h2>
+      <p class="section-head__text">
+        Выберите направление и перейдите к подходящим букетам.
+      </p>
+    </div>
+
+    <div class="bouquet-categories__slider reveal">
+      <button class="bouquet-categories__nav bouquet-categories__nav--prev" type="button" aria-label="Назад">
+        ‹
+      </button>
+
+      <div class="bouquet-categories__viewport">
+        <div class="bouquet-categories__track" id="bouquetCategoriesTrack">
+          <a class="bouquet-category-tile" href="author-bouquets.html">
+            <span class="bouquet-category-tile__num">01</span>
+            <h3>Авторские</h3>
+            <p>Выразительные композиции с акцентной подачей.</p>
+          </a>
+
+          <a class="bouquet-category-tile" href="mono-bouquets.html">
+            <span class="bouquet-category-tile__num">02</span>
+            <h3>Монобукеты</h3>
+            <p>Чистые формы и спокойная лаконичная эстетика.</p>
+          </a>
+
+          <a class="bouquet-category-tile" href="box-compositions.html">
+            <span class="bouquet-category-tile__num">03</span>
+            <h3>Коробки</h3>
+            <p>Подарочные решения с более собранной подачей.</p>
+          </a>
+
+          <a class="bouquet-category-tile" href="compositions.html">
+            <span class="bouquet-category-tile__num">04</span>
+            <h3>Композиции</h3>
+            <p>Объёмные цветочные решения для важного повода.</p>
+          </a>
+        </div>
+      </div>
+
+      <button class="bouquet-categories__nav bouquet-categories__nav--next" type="button" aria-label="Вперёд">
+        ›
+      </button>
+    </div>
+
+    <div class="bouquet-categories__actions reveal">
+      <a href="https://t.me/marsalaflower" class="btn btn--accent">Заказать</a>
+      <a href="https://max.ru/" class="btn btn--ghost">Проконсультироваться</a>
+    </div>
+  </div>
+</section>
+
       <section class="section corporate" id="corporate">
         <div class="container corporate__grid">
           <div class="corporate__copy reveal">
-            <p class="section-head__label section-head__label--light">corporate orders</p>
+            <p class="section-head__label">corporate orders</p>
             <h2 class="section-head__title section-head__title--light">Корпоративные заказы</h2>
             <p class="corporate__text">Букеты и композиции для сотрудников, руководителей, клиентов и деловых поводов.</p>
             <ul class="corporate__list">
@@ -273,51 +214,126 @@
               <a href="https://t.me/marsalaflower" class="btn btn--outline-light">Оставить запрос</a>
             </div>
           </div>
-
-          <div class="corporate__visual reveal">
-            <div class="corporate__visual-card">
-              <span>MARSALA flowers</span>
-              <strong>Цветочные решения для делового подарка и особого случая</strong>
-            </div>
-            <img src="https://images.unsplash.com/photo-1527061011665-3652c757a4d4?auto=format&fit=crop&w=1400&q=80" alt="Корпоративная композиция" />
-          </div>
         </div>
       </section>
 
-      <section class="section reviews" id="reviews">
-        <div class="container">
-          <div class="section-head reveal">
-            <p class="section-head__label">reviews & address</p>
-            <h2 class="section-head__title">Отзывы и контакты</h2>
-            <p class="section-head__text">Заказ можно оформить через Telegram или по телефону, а для визита — сразу открыть маршрут.</p>
-          </div>
+<section class="section reviews" id="reviews">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="section-head__label">Rewievs</p>
+      <h2 class="section-head__title">Отзывы</h2>
+    </div>
 
-          <div class="reviews-layout">
-            <div class="reviews-cards">
-              <article class="review-card reveal">
-                <p>“Самый лучший магазин в Воскресенске, всегда свежие цветы, отличное обслуживание!”</p>
-                <strong>— Катюшка</strong>
-              </article>
-              <article class="review-card reveal">
-                <p>“Очень красивые композиции, букетики. Самое красивое сочетание цветов. Рабочий персонал очень вежливый.”</p>
-                <strong>— Зарина Я.</strong>
-              </article>
-            </div>
+    <div class="reviews-slider reveal" data-reviews-slider>
+      <button class="reviews-slider__btn reviews-slider__btn--prev" type="button" aria-label="Назад">
+        ‹
+      </button>
 
-            <div class="map-card reveal">
-              <div class="map-card__inner">
-                <span>Контакты</span>
-                <h3>MARSALA flowers</h3>
-                <p>Московская область, Воскресенск, улица Ломоносова, 119, корп. 1</p>
-                <div class="card-actions">
-                  <a href="https://t.me/marsalaflower" class="btn btn--ghost">Telegram</a>
-                  <a href="tel:+79263496564" class="btn btn--accent">Позвонить</a>
-                </div>
-              </div>
+      <div class="reviews-slider__viewport">
+        <div class="reviews-slider__track">
+          <article class="review-card">
+            <div class="review-card__top">
+              <span class="review-card__source">Яндекс Карты</span>
+              <span class="review-card__rating">★★★★★</span>
             </div>
-          </div>
+            <p class="review-card__text">
+              Очень красивые и свежие букеты, всё аккуратно оформлено и выглядит действительно дорого.
+            </p>
+            <div class="review-card__meta">
+              <strong>Евгений</strong>
+              <span>отзыв клиента</span>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div class="review-card__top">
+              <span class="review-card__source">Яндекс Карты</span>
+              <span class="review-card__rating">★★★★★</span>
+            </div>
+            <p class="review-card__text">
+              Оригинальные букеты и индивидуальный подход. Всегда помогают подобрать что-то особенное.
+            </p>
+            <div class="review-card__meta">
+              <strong>Наталья</strong>
+              <span>постоянный клиент</span>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div class="review-card__top">
+              <span class="review-card__source">Яндекс Карты</span>
+              <span class="review-card__rating">★★★★★</span>
+            </div>
+            <p class="review-card__text">
+              Быстро приняли заказ, всё было свежее и красиво. Очень приятный сервис.
+            </p>
+            <div class="review-card__meta">
+              <strong>Олеся</strong>
+              <span>отзыв о доставке</span>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div class="review-card__top">
+              <span class="review-card__source">Яндекс Карты</span>
+              <span class="review-card__rating">★★★★★</span>
+            </div>
+            <p class="review-card__text">
+              Любимый цветочный магазин. Красивое оформление, хороший выбор и всегда высокий уровень.
+            </p>
+            <div class="review-card__meta">
+              <strong>Daria</strong>
+              <span>отзыв клиента</span>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div class="review-card__top">
+              <span class="review-card__source">Яндекс Карты</span>
+              <span class="review-card__rating">★★★★★</span>
+            </div>
+            <p class="review-card__text">
+              Цветы стоят долго, букеты выглядят стильно, а общение всегда очень комфортное.
+            </p>
+            <div class="review-card__meta">
+              <strong>Анастасия</strong>
+              <span>отзыв клиента</span>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div class="review-card__top">
+              <span class="review-card__source">Яндекс Карты</span>
+              <span class="review-card__rating">★★★★★</span>
+            </div>
+            <p class="review-card__text">
+              Заказывала не раз, и каждый раз всё на уровне: свежесть, стиль и быстрая работа.
+            </p>
+            <div class="review-card__meta">
+              <strong>Марина</strong>
+              <span>постоянный клиент</span>
+            </div>
+          </article>
         </div>
-      </section>
+      </div>
+
+      <button class="reviews-slider__btn reviews-slider__btn--next" type="button" aria-label="Вперёд">
+        ›
+      </button>
+    </div>
+
+    <div class="reviews-slider__footer reveal">
+      <a
+        href="https://yandex.ru/maps/org/marsala/48468776814/reviews/"
+        target="_blank"
+        rel="noopener"
+        class="btn btn--outline"
+      >
+        Смотреть отзывы на Яндекс
+      </a>
+    </div>
+  </div>
+</section>
 
       <section class="section contacts" id="contacts">
         <div class="container contacts__grid">
@@ -337,7 +353,7 @@
                     </p>
                     <p>
                       ⏰ График работы<br>
-                      ежедневно 9:00 – 21:00<br>
+                      ежедневно 10:00 – 21:00<br>
                       <small>график может меняться</small>
                     </p>
                   </div>
@@ -395,12 +411,15 @@
           <img src="img/logo.png" alt="MARSALA flowers" class="logo__img" />
         </a>
 
-        <nav class="footer__nav">
-          <a href="author-bouquets.html">Авторские</a>
-          <a href="mono-bouquets.html">Монобукеты</a>
+        <!-- <nav class="footer__nav">
+          <a href="bouquets.html">Букеты</a>
           <a href="box-compositions.html">Коробки</a>
-          <a href="corporate.html">Корпоративные</a>
-        </nav>
+          <a href="compositions.html">Композиции</a>
+          <a href="">Свадебные букеты</a>
+          <a href="">Декор</a>
+          <a href="corporate.html">Сотрудничество</a>
+          <a href="#contacts">Контакты</a>
+        </nav> -->
 
         <div class="footer__links">
           <a href="https://t.me/marsalaflower">Telegram</a>
@@ -411,7 +430,7 @@
 
     <div class="floating-actions">
       <a href="https://t.me/marsalaflower">TG</a>
-      <a href="author-bouquets.html">Cat</a>
+      <a href="https://max.ru">MAX</a>
       <a href="tel:+79263496564">Call</a>
     </div>
   </div>
