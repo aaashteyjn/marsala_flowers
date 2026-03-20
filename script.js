@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initReviewsSlider();
   initBouquetCategoriesSlider();
   initQuickChoiceFilters();
+  initFeaturedSection();
+  initQuickChoiceSlider();
 });
 
 function initBurger() {
@@ -267,4 +269,48 @@ function initQuickChoiceFilters() {
   maxInput.addEventListener("input", () => updateRange(maxInput));
 
   updateRange();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  initQuickChoiceSlider(); // Инициализация слайдера для хитовых позиций
+});
+
+function initQuickChoiceSlider() {
+  const prevBtn = document.querySelector(".featured-carousel__nav--prev");
+  const nextBtn = document.querySelector(".featured-carousel__nav--next");
+  const track = document.querySelector(".featured-carousel__track");
+  const items = document.querySelectorAll(".catalog-card");
+  
+  if (!track || !prevBtn || !nextBtn || !items.length) return;
+
+  let currentIndex = 0;
+  const itemsPerPage = 3; // Три товара в одном ряду
+  
+  function updateSlider() {
+    const totalItems = items.length;
+    const maxIndex = totalItems - itemsPerPage;
+    const offset = currentIndex * (items[0].offsetWidth + 16); // Учитываем gap в 16px между товарами
+
+    track.style.transform = `translateX(-${offset}px)`;
+
+    // Управляем активностью кнопок
+    prevBtn.disabled = currentIndex === 0;
+    nextBtn.disabled = currentIndex >= maxIndex;
+  }
+
+  prevBtn.addEventListener("click", () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateSlider();
+    }
+  });
+
+  nextBtn.addEventListener("click", () => {
+    if (currentIndex < items.length - itemsPerPage) {
+      currentIndex++;
+      updateSlider();
+    }
+  });
+
+  updateSlider();
 }

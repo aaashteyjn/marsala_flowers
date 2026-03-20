@@ -59,83 +59,104 @@
             <h2 class="section-head__title">Хитовые позиции</h2>
             <p class="section-head__text">Самые выразительные варианты, с которых удобно начать выбор.</p>
           </div>
-                <div class="quick-choice__filters">
-      <div class="quick-choice__tabs">
-        <button class="quick-choice__tab is-active" data-filter="all">Все</button>
-        <button class="quick-choice__tab" data-filter="mono">Моно</button>
-        <button class="quick-choice__tab" data-filter="author">Авторские</button>
-        <button class="quick-choice__tab" data-filter="boxes">Коробки</button>
-        <button class="quick-choice__tab" data-filter="wedding">Свадебные</button>
-        <button class="quick-choice__tab" data-filter="decor">Декор</button>
-      </div>
+          <div class="quick-choice__filters">
+            <div class="quick-choice__tabs">
+              <button class="quick-choice__tab is-active" data-filter="all">Все</button>
+              <button class="quick-choice__tab" data-filter="mono">Моно</button>
+              <button class="quick-choice__tab" data-filter="author">Авторские</button>
+              <button class="quick-choice__tab" data-filter="box">Коробки</button>
+              <button class="quick-choice__tab" data-filter="wedding">Свадебные</button>
+              <button class="quick-choice__tab" data-filter="decor">Декор</button>
+            </div>
 
-      <div class="quick-choice__price-range">
-        <div class="quick-choice__price-values">
-          <span id="priceMinValue">500 ₽</span>
-          <span>—</span>
-          <span id="priceMaxValue">15 500 ₽</span>
-        </div>
+            <div class="quick-choice__price-range">
+              <div class="quick-choice__price-values">
+                <span id="priceMinValue">500 ₽</span>
+                <span>—</span>
+                <span id="priceMaxValue">15 500 ₽</span>
+              </div>
 
         <div class="quick-choice__slider">
           <div class="quick-choice__track"></div>
           <div class="quick-choice__range" id="priceRangeFill"></div>
 
           <input type="range" min="500" max="20000" value="2000" id="priceMin" class="quick-choice__input">
-          <input type="range" min="500" max="20000" value="15500" id="priceMax" class="quick-choice__input">
+          <input type="range" min="500" max="20000" value="10000" id="priceMax" class="quick-choice__input">
         </div>
       </div>
     </div>
-  </div>
-<div class="catalog-grid" id="catalogGrid">
-            <article class="catalog-card reveal" data-category="author" data-price="5900">
+    
+  <div class="featured-carousel">
+      <button class="featured-carousel__nav featured-carousel__nav--prev" type="button" aria-label="Назад">←</button>
+
+      <div class="featured-carousel__viewport">
+        <div class="catalog-grid featured-carousel__track" id="catalogGrid">
+
+            <article class="catalog-card reveal" data-category="author" data-price="3500">
               <div class="catalog-card__gallery">
-                <img class="product-image active" src="img/коробки/XXL.jpg" alt="Crimson Story" />
-                <img class="product-image" src="img/коробки/XXL.jpg" alt="Crimson Story" />
-                <img class="product-image" src="img/коробки/XXL.jpg" alt="Crimson Story" />
+                <img class="product-image active" src="img/compositions/anturium.jpg" alt="composition" />
+                <img class="product-image active" src="img/compositions/ekz.jpg" alt="composition" />
+                <img class="product-image active" src="img/compositions/silk.jpg" alt="composition" />
                 <div class="product-dots"></div>
               </div>
               <div class="catalog-card__body">
                 <p class="mini-label">author bouquet</p>
-                <h3>Crimson Story</h3>
+                <h3>Авторский букет</h3>
                 <p class="catalog-card__desc">Выразительная композиция для важного повода.</p>
                 <div class="catalog-card__bottom">
-                  <span class="catalog-card__price">от 5 900 ₽</span>
+                  <span class="catalog-card__price">от 3 500 ₽</span>
                   <a href="https://t.me/marsalaflower" class="text-link">Заказать</a>
                 </div>
               </div>
             </article>
 
-            <article class="catalog-card reveal" data-category="mono" data-price="3200">
+            <article class="catalog-card reveal" data-category="box" data-price="8000">
               <div class="catalog-card__gallery">
-                <img class="product-image active" src="img/коробки/XXL.jpg" alt="Pure Stem" />
-                <img class="product-image" src="img/коробки/XXL.jpg" alt="Pure Stem" />
-                <img class="product-image" src="img/коробки/XXL.jpg" alt="Pure Stem" />
+                <img class="product-image active" src="img/box/nabor.jpg" alt="box" />
+                <div class="product-dots"></div>
+              </div>
+              <div class="catalog-card__body">
+                <p class="mini-label">set</p>
+                <h3>Цветочный набор</h3>
+                <p class="catalog-card__desc">Цветочные коробки в двух размерах для жены и для дочки.</p>
+                <div class="catalog-card__bottom">
+                  <span class="catalog-card__price">от 8 000 ₽</span>
+                  <a href="https://t.me/marsalaflower" class="text-link">Заказать</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="catalog-card reveal" data-category="mono" data-price="2500">
+              <div class="catalog-card__gallery">
+                <img class="product-image active" src="img/mono/mono_kr.jpg" alt="bouquet" />
+                <img class="product-image active" src="img/mono/mono_ros.jpg" alt="bouquet" />
                 <div class="product-dots"></div>
               </div>
               <div class="catalog-card__body">
                 <p class="mini-label">mono bouquet</p>
-                <h3>Pure Stem</h3>
+                <h3>Моно букет</h3>
                 <p class="catalog-card__desc">Лаконичный монобукет на каждый день и для подарка.</p>
                 <div class="catalog-card__bottom">
-                  <span class="catalog-card__price">от 3 200 ₽</span>
+                  <span class="catalog-card__price">от 2 500 ₽</span>
                   <a href="https://t.me/marsalaflower" class="text-link">Заказать</a>
                 </div>
               </div>
             </article>
 
-            <article class="catalog-card reveal" data-category="box" data-price="6900">
+            <article class="catalog-card reveal" data-category="box" data-price="2700">
               <div class="catalog-card__gallery">
-                <img class="product-image active" src="img/коробки/XXL.jpg" alt="Velour Bloom" />
-                <img class="product-image" src="img/коробки/XXL.jpg" alt="Velour Bloom" />
-                <img class="product-image" src="img/коробки/XXL.jpg" alt="Velour Bloom" />
+                <img class="product-image active" src="img/box/alie_rosi.jpg" alt="vox" />
+                <img class="product-image active" src="img/box/roses.jpg" alt="mono" />
+                <img class="product-image active" src="img/box/XXL.jpg" alt="mono" />
+                <img class="product-image active" src="img/box/mono_S.jpg" alt="mono" />
                 <div class="product-dots"></div>
               </div>
               <div class="catalog-card__body">
                 <p class="mini-label">box composition</p>
-                <h3>Velour Bloom</h3>
+                <h3>Алые розы</h3>
                 <p class="catalog-card__desc">Подарочная композиция с яркой подачей.</p>
                 <div class="catalog-card__bottom">
-                  <span class="catalog-card__price">от 6 900 ₽</span>
+                  <span class="catalog-card__price">от 2 700 ₽</span>
                   <a href="https://t.me/marsalaflower" class="text-link">Заказать</a>
                 </div>
               </div>
@@ -191,9 +212,12 @@
                 </div>
               </div>
             </article>
+            </div>
           </div>
-        </div>
-      </section>
+          <button class="featured-carousel__nav featured-carousel__nav--next" type="button" aria-label="Вперёд">→</button>
+    </div>
+  </div>
+</section>
 
 <section class="section bouquet-categories">
   <div class="container">
@@ -212,7 +236,7 @@
 
       <div class="bouquet-categories__viewport">
         <div class="bouquet-categories__track" id="bouquetCategoriesTrack">
-          <a class="bouquet-category-tile" href="author-bouquets.html">
+          <a class="bouquet-category-tile" href="compositions.html">
             <span class="bouquet-category-tile__num">01</span>
             <h3>Авторские</h3>
             <p>Выразительные композиции с акцентной подачей.</p>
@@ -235,6 +259,19 @@
             <h3>Композиции</h3>
             <p>Объёмные цветочные решения для важного повода.</p>
           </a>
+
+          <a class="bouquet-category-tile" href="wedding-bouqets.html">
+            <span class="bouquet-category-tile__num">05</span>
+            <h3>Свадебные букеты</h3>
+            <p>Элегантные цветочные композиции для самого важного дня.</p>
+          </a>
+
+          <a class="bouquet-category-tile" href="decor.html">
+            <span class="bouquet-category-tile__num">06</span>
+            <h3>Декор</h3>
+            <p>Стильные элементы для создания неповторимой атмосферы.</p>
+          </a>
+
         </div>
       </div>
 
@@ -244,8 +281,8 @@
     </div>
 
     <div class="bouquet-categories__actions reveal">
-      <a href="https://t.me/marsalaflower" class="btn btn--accent">Заказать</a>
-      <a href="https://max.ru/" class="btn btn--ghost">Проконсультироваться</a>
+      <a href="#contacts" class="btn btn--accent">Заказать</a>
+      <a href="#contacts" class="btn btn--ghost">Проконсультироваться</a>
     </div>
   </div>
 </section>
