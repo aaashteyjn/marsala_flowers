@@ -1651,8 +1651,26 @@ body::before {
   will-change: transform;
 }
 
+/* по умолчанию — мобилка */
 .featured-carousel__track .catalog-card {
-  flex: 0 0 calc((100% - 44px) / 3);
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* планшет */
+@media (min-width: 768px) {
+  .featured-carousel__track .catalog-card {
+    flex: 0 0 calc((100% - 22px) / 2);
+    max-width: calc((100% - 22px) / 2);
+  }
+}
+
+/* десктоп */
+@media (min-width: 1024px) {
+  .featured-carousel__track .catalog-card {
+    flex: 0 0 calc((100% - 44px) / 3);
+    max-width: calc((100% - 44px) / 3);
+  }
 }
 
 .featured-carousel__nav {
