@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initReveal();
   initProductGalleries();
   initReviewsSlider();
-  initPriceSlider();
   initBouquetCategoriesSlider();
+  initQuickChoiceFilters();
 });
 
 function initBurger() {
@@ -12,10 +12,14 @@ function initBurger() {
   const nav = document.getElementById("nav");
   if (!burger || !nav) return;
 
-  burger.addEventListener("click", () => nav.classList.toggle("is-open"));
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("is-open");
+  });
 
   nav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => nav.classList.remove("is-open"));
+    link.addEventListener("click", () => {
+      nav.classList.remove("is-open");
+    });
   });
 }
 
@@ -48,6 +52,7 @@ function initProductGalleries() {
     if (!images.length || !dotsWrap) return;
 
     let current = 0;
+    dotsWrap.innerHTML = "";
 
     images.forEach((_, index) => {
       const dot = document.createElement("button");
@@ -55,7 +60,10 @@ function initProductGalleries() {
       dot.className = "product-dot" + (index === 0 ? " active" : "");
       dot.setAttribute("aria-label", `Фото ${index + 1}`);
 
-      dot.addEventListener("click", () => {
+      dot.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
         images[current].classList.remove("active");
         dotsWrap.children[current].classList.remove("active");
 
@@ -116,28 +124,108 @@ function initReviewsSlider() {
   });
 
   window.addEventListener("resize", updateSlider);
-
   updateSlider();
 }
 
-function initPriceSlider() {
+function initBouquetCategoriesSlider() {
+  const slider = document.querySelector(".bouquet-categories__slider");
+  if (!slider) return;
+
+  const track = slider.querySelector(".bouquet-categories__track");
+  const cards = Array.from(slider.querySelectorAll(".bouquet-category-tile"));
+  const prevBtn = slider.querySelector(".bouquet-categories__nav--prev");
+  const nextBtn = slider.querySelector(".bouquet-categories__nav--next");
+
+  if (!track || !cards.length || !prevBtn || !nextBtn) return;
+
+  let currentIndex = 0;
+
+  function getVisibleCount() {
+    if (window.innerWidth <= 640) return 1;
+    if (window.innerWidth <= 1100) return 2;
+    return 4;
+  }
+
+  function updateSlider() {
+    const visibleCount = getVisibleCount();
+    const maxIndex = Math.max(0, cards.length - visibleCount);
+    const cardWidth = cards[0].offsetWidth;
+    const gap = 18;
+
+    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex > maxIndex) currentIndex = maxIndex;
+
+    const offset = currentIndex * (cardWidth + gap);
+    track.style.transform = `translateX(-${offset}px)`;
+
+    prevBtn.disabled = currentIndex === 0;
+    nextBtn.disabled = currentIndex === maxIndex;
+  }
+
+  prevBtn.addEventListener("click", () => {
+    currentIndex -= 1;
+    updateSlider();
+  });
+
+  nextBtn.addEventListener("click", () => {
+    currentIndex += 1;
+    updateSlider();
+  });
+
+  window.addEventListener("resize", updateSlider);
+  updateSlider();
+}
+
+function initQuickChoiceFilters() {
+  const tabs = document.querySelectorAll(".quick-choice__tab");
   const minInput = document.getElementById("priceMin");
   const maxInput = document.getElementById("priceMax");
   const minValue = document.getElementById("priceMinValue");
   const maxValue = document.getElementById("priceMaxValue");
   const rangeFill = document.getElementById("priceRangeFill");
+  const cards = document.querySelectorAll("#catalogGrid .catalog-card");
 
-  if (!minInput || !maxInput || !minValue || !maxValue || !rangeFill) return;
+  if (!tabs.length || !minInput || !maxInput || !minValue || !maxValue || !rangeFill || !cards.length) {
+    return;
+  }
 
-  const minLimit = Number(minInput.min);
-  const maxLimit = Number(minInput.max);
+  let activeCategory = "all";
   const minGap = 500;
+  const minLimit = Number(minInput.min);
+  const maxLimit = Number(maxInput.max);
+
+  minInput.value = minLimit;
+  if (!maxInput.value || Number(maxInput.value) < minLimit) {
+    maxInput.value = maxLimit;
+  }
+
+  function normalizeCategory(value) {
+    if (value === "boxes") return "box";
+    return value;
+  }
 
   function formatPrice(value) {
     return new Intl.NumberFormat("ru-RU").format(value) + " ₽";
   }
 
-  function updateSlider(changedInput = null) {
+  function applyFilters() {
+    const minPrice = Number(minInput.value);
+    const maxPrice = Number(maxInput.value);
+
+    cards.forEach((card) => {
+      const category = card.dataset.category || "";
+      const price = Number(card.dataset.price || 0);
+
+      const categoryMatch =
+        activeCategory === "all" || category === normalizeCategory(activeCategory);
+
+      const priceMatch = price >= minPrice && price <= maxPrice;
+
+      card.style.display = categoryMatch && priceMatch ? "" : "none";
+    });
+  }
+
+  function updateRange(changedInput = null) {
     let minVal = Number(minInput.value);
     let maxVal = Number(maxInput.value);
 
@@ -160,29 +248,23 @@ function initPriceSlider() {
     rangeFill.style.left = `${left}%`;
     rangeFill.style.width = `${right - left}%`;
 
-    filterCardsByPrice(minVal, maxVal);
+    applyFilters();
   }
 
-  minInput.addEventListener("input", () => updateSlider(minInput));
-  maxInput.addEventListener("input", () => updateSlider(maxInput));
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
 
-  updateSlider();
-}
-
-function filterCardsByPrice(minPrice, maxPrice) {
-  const cards = document.querySelectorAll(".catalog-card, .signature-card, .product-card");
-
-  cards.forEach((card) => {
-    const rawPrice = card.dataset.price;
-    if (!rawPrice) return;
-
-    const price = Number(rawPrice);
-
-    if (price >= minPrice && price <= maxPrice) {
-      card.style.display = "";
-    } else {
-      card.style.display = "none";
-    }
+      tabs.forEach((btn) => btn.classList.remove("is-active"));
+      tab.classList.add("is-active");
+      activeCategory = tab.dataset.filter || "all";
+      applyFilters();
+    });
   });
-}
 
+  minInput.addEventListener("input", () => updateRange(minInput));
+  maxInput.addEventListener("input", () => updateRange(maxInput));
+
+  updateRange();
+}

@@ -3,84 +3,234 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>[Название страницы] — MARSALA flowers</title>
-  <meta name="description" content="[Описание страницы]" />
+  <title>MARSALA flowers</title>
+  <meta name="description" content="Авторские букеты, монобукеты и композиции MARSALA flowers. Доставка, самовывоз, корпоративные заказы." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="brand/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="img/logo.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <div class="page-wrap">
-    <header class="header" id="top">
-      <div class="container header__inner">
-        <a href="index.html" class="logo logo--image" aria-label="MARSALA flowers">
-          <img src="brand/logo-horizontal.svg" alt="MARSALA flowers" class="logo__img" />
-        </a>
+  <body>
+    <div class="page-wrap">
+        <header class="header" id="top">
+            <div class="container header__inner">
+                <a href="index.html" class="logo logo--image" aria-label="MARSALA flowers">
+                <img src="img/logo_h.png" alt="MARSALA flowers" class="logo__img" />
+                </a>
 
-        <nav class="nav" id="nav">
-          <a href="author-bouquets.html">Авторские</a>
-          <a href="mono-bouquets.html">Монобукеты</a>
-          <a href="box-compositions.html">Коробки</a>
-          <a href="compositions.html">Композиции</a>
-          <a href="corporate.html">Корпоративные</a>
-          <a href="index.html#contacts">Контакты</a>
-        </nav>
+                <nav class="nav" id="nav">
+                <a href="index.html">Главная</a>
+                <a href="mono-bouquets.html">Монобукеты</a>
+                <a href="box-compositions.html">Коробки</a>
+                <a href="compositions.html">Композиции</a>
+                <a href="wedding-bouqets.html">Свадебные букеты</a>
+                <a href="index.html#corporate">Сотрудничество</a>
+                <a href="#contacts">Контакты</a>
+                </nav>
 
-        <div class="header__actions">
-          <a href="https://t.me/marsalaflower" class="btn btn--ghost">Telegram</a>
-          <a href="https://max.ru/" class="btn btn--ghost">MAX</a>
-          <a href="tel:+79263496564" class="btn btn--accent">Позвонить</a>
-        </div>
-
-        <button class="burger" id="burger" aria-label="Меню">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </header>
-
-    <main>
-      <section class="page-hero">
-        <div class="container reveal">
-          <img src="brand/icon-only.svg" alt="MARSALA flowers" class="page-hero__brandmark" />
-          <div class="page-hero__crumbs">
-            <a href="index.html">Главная</a>
-            <span>•</span>
-            <span>[Текущая страница]</span>
+                <button class="burger" id="burger" aria-label="Меню">
+                <span></span><span></span><span></span>
+                </button>
+            </div>
+        </header>
+        <main>
+        <section class="section catalog">
+          <div class="container">
+          <div class="section-head">
+            <p class="section-head__label">decor</p>
+            <h2 class="section-head__title">Декор</h2>
           </div>
-          <h1 class="page-hero__title">[Заголовок страницы]</h1>
-          <p class="page-hero__text">[Короткий продающий текст страницы]</p>
+          <div class="quick-choice__filters">
+            <div class="quick-choice__tabs">
+                <button class="quick-choice__tab is-active" data-filter="all">Все</button>
+                <button class="quick-choice__tab" data-filter="candle">Свечи</button>
+                <button class="quick-choice__tab" data-filter="decoration">Украшения</button>
+                <button class="quick-choice__tab" data-filter="vase">Вазы</button>
+            </div>
+            <div class="quick-choice__price-range">
+                <div class="quick-choice__price-values">
+                <span id="priceMinValue">500 ₽</span>
+                <span>—</span>
+                <span id="priceMaxValue">15 500 ₽</span>
+                </div>
+            <div class="quick-choice__slider">
+            <div class="quick-choice__track"></div>
+            <div class="quick-choice__range" id="priceRangeFill"></div>
+            <input type="range" min="500" max="20000" value="2000" id="priceMin" class="quick-choice__input">
+            <input type="range" min="500" max="20000" value="15500" id="priceMax" class="quick-choice__input">
+            </div>
         </div>
-      </section>
-
-      <section class="section catalog">
-        <div class="container">
-          <div class="section-head reveal">
-            <p class="section-head__label">collection</p>
-            <h2 class="section-head__title">[Подзаголовок секции]</h2>
-          </div>
-
-          <div class="category-grid">
-            <!-- Скопируйте эту карточку нужное количество раз -->
-            <article class="catalog-card reveal">
+        </div>
+    </div>
+            <div class="catalog-grid" id="catalogGrid">
+            <article class="catalog-card reveal" data-category="candle" data-price="850">
               <div class="catalog-card__gallery">
-                <img class="product-image active" src="https://images.unsplash.com/photo-1455656678494-4d1b5f3e7ad1?auto=format&fit=crop&w=1200&q=80" alt="Название букета" />
-                <img class="product-image" src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?auto=format&fit=crop&w=1200&q=80" alt="Название букета" />
-                <img class="product-image" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=80" alt="Название букета" />
+                <img class="product-image active" src="img/decor/свечи.jpg" alt="candle" />
                 <div class="product-dots"></div>
               </div>
               <div class="catalog-card__body">
-                <p class="mini-label">категория</p>
-                <h3>Название букета</h3>
-                <p class="catalog-card__desc">Короткое описание букета или композиции.</p>
+                <p class="mini-label">candle</p>
+                <h3>Аромасвечи ручной работы</h3>
+                <p class="catalog-card__desc">Арома свечи в стекле с деревянным фитилем для создания самой теплой атмосферы и уюта.</p>
                 <div class="catalog-card__bottom">
-                  <span class="catalog-card__price">от 5 900 ₽</span>
+                  <span class="catalog-card__price">от 850 ₽</span>
                   <a href="https://t.me/marsalaflower" class="text-link">Заказать</a>
                 </div>
               </div>
             </article>
+
+            <article class="catalog-card reveal" data-category="candle" data-price="900">
+              <div class="catalog-card__gallery">
+                <img class="product-image active" src="img/decor/свеча.jpg" alt="candle" />
+                <div class="product-dots"></div>
+              </div>
+              <div class="catalog-card__body">
+                <p class="mini-label">candle</p>
+                <h3>Свеча "Карамельная тыква"</h3>
+                <p class="catalog-card__desc">Свеча с деревянным фитилем, подарит Вашему дому тепла и уюта.</p>
+                <div class="catalog-card__bottom">
+                  <span class="catalog-card__price">900 ₽</span>
+                  <a href="https://t.me/marsalaflower" class="text-link">Заказать</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="catalog-card reveal" data-category="decoration" data-price="600">
+              <div class="catalog-card__gallery">
+                <img class="product-image active" src="img/decor/брошь.jpg" alt="Decor" />
+                <div class="product-dots"></div>
+              </div>
+              <div class="catalog-card__body">
+                <p class="mini-label">decoration</p>
+                <h3>Брошь</h3>
+                <p class="catalog-card__desc">Брошь ручной работы из гончарной глины.</p>
+                <div class="catalog-card__bottom">
+                  <span class="catalog-card__price">600 ₽</span>
+                  <a href="https://t.me/marsalaflower" class="text-link">Заказать</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="catalog-card reveal" data-category="vase" data-price="600">
+              <div class="catalog-card__gallery">
+                <img class="product-image active" src="img/decor/ваза11.jpg" alt="vase" />
+                <div class="product-dots"></div>
+              </div>
+              <div class="catalog-card__body">
+                <p class="mini-label">vase</p>
+                <h3>Ваза для мини букетов</h3>
+                <p class="catalog-card__desc">Стеклянная ваза с декоративной фактурой высотой 11 см, диаметром 11 см.</p>
+                <div class="catalog-card__bottom">
+                  <span class="catalog-card__price">600 ₽</span>
+                  <a href="https://t.me/marsalaflower" class="text-link">Заказать</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="catalog-card reveal" data-category="vase" data-price="1200">
+              <div class="catalog-card__gallery">
+                <img class="product-image active" src="img/decor/ваза_зел.jpg" alt="vase" />
+                <div class="product-dots"></div>
+              </div>
+              <div class="catalog-card__body">
+                <p class="mini-label">vase</p>
+                <h3>Ваза для цветов</h3>
+                <p class="catalog-card__desc">Стеклянная ваза декоративной формы, высота 28,5 см.</p>
+                <div class="catalog-card__bottom">
+                  <span class="catalog-card__price">1200 ₽</span>
+                  <a href="https://t.me/marsalaflower" class="text-link">Заказать</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="catalog-card reveal" data-category="vase" data-price="1100">
+              <div class="catalog-card__gallery">
+                <img class="product-image active" src="img/decor/ваза20.jpg" alt="vase" />
+                <div class="product-dots"></div>
+              </div>
+              <div class="catalog-card__body">
+                <p class="mini-label">vase</p>
+                <h3>Ваза для цветов</h3>
+                <p class="catalog-card__desc">Стеклянная ваза с декоративной фактурой высотой 20 см и диаметром 11 см.</p>
+                <div class="catalog-card__bottom">
+                  <span class="catalog-card__price">1100 ₽</span>
+                  <a href="https://t.me/marsalaflower" class="text-link">Заказать</a>
+                </div>
+              </div>
+            </article>
+
           </div>
+        </div>
+    </section>
+
+
+          <section class="section contacts" id="contacts">
+        <div class="container contacts__grid">
+          <div class="contacts__copy reveal">
+            <p class="section-head__label">contacts</p>
+            <h2 class="section-head__title">Связаться и приехать</h2>
+            <h3>MARSALA flowers</h3>
+            <ul class="contacts-list">
+              <li><strong>Телефон:</strong> +7 (926) 349-65-64</li>
+              <li><strong>Telegram:</strong> @marsalaflower</li>
+              <li><strong>На Яндекс Картах:</strong> рейтинг 5.0</li>
+            </ul>
+                  <div class="contacts-info">
+                    <p>
+                      📍 Московская область, Воскресенск<br>
+                      улица Ломоносова, 119, корп. 1
+                    </p>
+                    <p>
+                      ⏰ График работы<br>
+                      ежедневно 10:00 – 21:00<br>
+                      <small>график может меняться</small>
+                    </p>
+                  </div>
+            <div class="contacts__actions">
+              <div class="contacts-buttons">
+                <a href="https://t.me/marsalaflower" class="btn btn--accent">Написать в Telegram</a>
+                <a href="https://max.ru/" class="btn btn--ghost">Написать в MAX</a>
+              </div>
+              <a href="tel:+79263496564" class="btn btn--ghost">Позвонить</a>
+            </div>
+          </div>
+          <div class="contacts-map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?ll=38.720020%2C55.318401&mode=search&oid=48468776814&ol=biz&z=16"
+              width="100%"
+              height="420"
+              frameborder="0"
+              allowfullscreen="true"
+              style="border-radius:20px;">
+            </iframe>
+          </div>
+          <form class="contact-card reveal">
+            <p class="mini-label">quick request</p>
+            <h3>Быстрая заявка</h3>
+            <label>
+              <span>Имя</span>
+              <input type="text" placeholder="Ваше имя" />
+            </label>
+            <label>
+              <span>Контакт</span>
+              <input type="text" placeholder="+7 или @username" />
+            </label>
+            <label>
+              <span>Что нужно</span>
+              <select>
+                <option>Авторский букет</option>
+                <option>Монобукет</option>
+                <option>Композиция в коробке</option>
+                <option>Корпоративный заказ</option>
+              </select>
+            </label>
+            <label>
+              <span>Комментарий</span>
+              <textarea rows="4" placeholder="Повод, бюджет, пожелания"></textarea>
+            </label>
+            <button type="button" class="btn btn--accent btn--full">Отправить запрос</button>
+          </form>
         </div>
       </section>
     </main>
@@ -88,24 +238,18 @@
     <footer class="footer">
       <div class="container footer__inner">
         <a href="index.html" class="logo logo--image" aria-label="MARSALA flowers">
-          <img src="brand/logo-horizontal.svg" alt="MARSALA flowers" class="logo__img" />
+          <img src="img/logo.png" alt="MARSALA flowers" class="logo__img" />
         </a>
-
-        <nav class="footer__nav">
-          <a href="author-bouquets.html">Авторские</a>
-          <a href="mono-bouquets.html">Монобукеты</a>
-          <a href="box-compositions.html">Коробки</a>
-          <a href="corporate.html">Корпоративные</a>
-        </nav>
-
-        <div class="footer__links">
-          <a href="https://t.me/marsalaflower">Telegram</a>
-          <a href="tel:+79263496564">+7 (926) 349-65-64</a>
-        </div>
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <div class="floating-actions">
+      <a href="https://t.me/marsalaflower">TG</a>
+      <a href="https://max.ru">MAX</a>
+      <a href="tel:+79263496564">Call</a>
+    </div>
   </div>
-</body>
+
+        <script src="script.js"></script>
+    </body>
 </html>
