@@ -162,7 +162,7 @@ body::before {
 .footer__links a {
   position: relative;
   font-family: "Cormorant Garamond", serif;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.02em;
   color: var(--olive);
@@ -441,19 +441,22 @@ body::before {
   font-size: clamp(2.6rem, 4.6vw, 4.8rem);
 }
 
-.section-head__text,
 .signature-card__desc,
-.catalog-card__desc,
+.contact-card label,
 .corporate__text,
 .contacts-list li,
 .contacts-info p,
-.contact-card label span,
 .category-link p {
   color: var(--milk);
   line-height: 1.7;
 }
 
-review-card__text
+.section-head__text,
+.catalog-card__desc,
+.contact-card span {
+  color: var(--olive);
+  line-height: 1.7;
+}
 
 .mini-label {
   margin: 0 0 8px;
